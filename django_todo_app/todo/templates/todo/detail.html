@@ -1,0 +1,11 @@
+{% extends "todo/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+{% endblock %}
+
+{% block main %}
+    <p>{{ todo.title }}</p>
+
+    <p>{{ todo.body }}</p>
+{% endblock %}

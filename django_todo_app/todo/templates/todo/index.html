@@ -1,0 +1,17 @@
+{% extends "todo/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+{% endblock %}
+
+{% block body %}
+{% comment %}
+    TODO: display all todos as list
+{% endcomment %}
+
+    <ul>
+        {% for todo in todo_list %}
+            <li><a href="{% url 'todo:detail' todo.slug %}">{{ todo.title }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

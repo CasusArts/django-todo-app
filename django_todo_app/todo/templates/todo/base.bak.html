@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>
+        {% block title %}
+            Todo App
+        {% endblock title %}
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{% static 'todo/dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'todo/css/sticky-footer.css' %}">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{% static 'todo/css/main.css' %}">
+  </head>
+
+  <body>
+
+    <!-- Begin page content -->
+    {% block main %}
+
+    {% endblock main %}
+
+    {% block footer %}
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Made by CasusArts</span>
+      </div>
+  </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'todo/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'todo/js/tether.min.js' %}"></script>
+    <script src="{% static 'todo/dist/js/bootstrap.min.js' %}"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{% static 'todo/js/ie10-viewport-bug-workaround.js' %}"></script>
+    {% endblock footer %}
+  </body>
+</html>
